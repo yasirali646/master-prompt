@@ -1,0 +1,13 @@
+# Dependencies
+node_modules/
+.next/
+out/
+
+# Environment & secrets
+.env
+.env.local
+.env.*.local
+
+# Misc
+.DS_Store
+*.pem
