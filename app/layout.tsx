@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { AuthProvider } from "@/components/AuthProvider";
 import { WorkspaceProvider } from "@/components/WorkspaceProvider";
@@ -40,6 +41,7 @@ export default function RootLayout({
             <ThemeProvider>{children}</ThemeProvider>
           </WorkspaceProvider>
         </AuthProvider>
+        <Analytics />
       </body>
     </html>
   );
